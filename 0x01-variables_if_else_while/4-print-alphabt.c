@@ -7,7 +7,9 @@
  */
 int main(void)
 {
-	for (int a = 0x61; a <= 0x61 + 25; a++)
+	int a;
+
+	for (a = 0x61; a <= 0x61 + 25; a++)
 	{
 		if ((a != 'q') && (a != 'e'))
 		{

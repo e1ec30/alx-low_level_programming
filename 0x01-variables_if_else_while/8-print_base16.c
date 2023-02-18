@@ -7,9 +7,12 @@
  */
 int main(void)
 {
-	for (int a = '0'; a <= '9'; a++)
+	int a = 0;
+	int b = 0;
+
+	for (a = '0'; a <= '9'; a++)
 		putchar(a);
-	for (int b = 'a'; b <= 'f'; b++)
+	for (b = 'a'; b <= 'f'; b++)
 		putchar(b);
 	putchar('\n');
 }
