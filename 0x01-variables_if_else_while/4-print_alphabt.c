@@ -7,13 +7,15 @@
  */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
+	int a;
 
-	for (a = '0'; a <= '9'; a++)
-		putchar(a);
-	for (b = 'a'; b <= 'f'; b++)
-		putchar(b);
+	for (a = 0x61; a <= 0x61 + 25; a++)
+	{
+		if ((a != 'q') && (a != 'e'))
+		{
+			putchar(a);
+		}
+	}
 	putchar('\n');
 	return (0);
 }
