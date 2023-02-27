@@ -26,17 +26,3 @@ void rev_string(char *s)
 
 }
 
-/**
- * main - test
- *
- * Return: 0
- */
-
-int main(void)
-{
-	char s[] = "Hello, Danger";
-
-	rev_string(s);
-	puts(s);
-	return (0);
-}
