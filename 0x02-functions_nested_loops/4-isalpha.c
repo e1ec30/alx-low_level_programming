@@ -12,5 +12,7 @@ int _isalpha(int c)
 	int ret;
 
 	ret = isalpha(c);
+	if (ret > 0)
+		ret = 1;
 	return (ret);
 }
