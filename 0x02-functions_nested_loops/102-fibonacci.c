@@ -14,7 +14,7 @@ int main(void)
 	uint64_t tmp;
 	int c;
 
-	for (c = 0; c <= 50; c++)
+	for (c = 0; c < 50; c++)
 	{
 		printf("%lu", b);
 		tmp = a;
