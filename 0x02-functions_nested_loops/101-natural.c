@@ -19,4 +19,5 @@ int main(void)
 		else
 			sum += 0;
 	}
+	return (0);
 }
