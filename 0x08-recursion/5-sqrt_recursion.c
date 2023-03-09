@@ -9,7 +9,7 @@
 
 int _sqrt_recursion(int n)
 {
-	return (guess(n, n / 2));
+	return (guess(n, 1));
 }
 
 /**
