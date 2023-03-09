@@ -24,11 +24,9 @@ int is_prime_number(int n)
 
 int is_prime(int x, int y)
 {
-	if (y >= x)
-		return (1);
 	if (y == x - 1)
-		return (0);
-	if ((y % x) == 0)
+		return (1);
+	else if ((y % x) == 0)
 		return (0);
 	return (is_prime(x, y++));
 }
