@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * is_prime_number - check if a number is prime
@@ -24,6 +25,7 @@ int is_prime_number(int n)
 
 int is_prime(int num, int b)
 {
+	printf("called with num = %d, b = %d", num, b);
 	if (b >= num - 1)
 		return (1);
 	else if (num % b == 0)
