@@ -31,5 +31,5 @@ int is_prime(int num, int b)
 	else if (num % b == 0)
 		return (0);
 	else
-		return (is_prime(num, b++));
+		return (is_prime(num, ++b));
 }
