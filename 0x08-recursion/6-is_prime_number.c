@@ -9,6 +9,8 @@
 
 int is_prime_number(int n)
 {
+	if (n <= 1)
+		return (0);
 	return (is_prime(n, 2));
 }
 
@@ -22,9 +24,9 @@ int is_prime_number(int n)
 
 int is_prime(int num, int b)
 {
-	if (b >= num && b > 1)
+	if (b >= num - 1)
 		return (1);
-	else if (num % b == 0 || b <= 1)
+	else if (num % b == 0)
 		return (0);
 	else
 		return (is_prime(num, b++));
