@@ -15,18 +15,19 @@ int is_prime_number(int n)
 }
 
 /**
- * is_prime - inner function
+ * is_prime - inner function, check if any number from b to num - 1 divides num
  *
- * @x: number to check
- * @y: which number to start from
+ * @num: number to check
+ * @b: which number to start from
  * Return: 1 if prime 0 otherwise
  */
 
-int is_prime(int x, int y)
+int is_prime(int num, int b)
 {
-	if (y == x - 1)
+	if (b >= num - 1)
 		return (1);
-	else if ((y % x) == 0)
+	else if (num % b == 0)
 		return (0);
-	return (is_prime(x, y++));
+	else
+		return (is_prime(num, b++));
 }
